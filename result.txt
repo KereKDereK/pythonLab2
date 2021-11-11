@@ -1,0 +1,10 @@
+Ошибок в файле  8614
+email	1000
+height	884
+inn	986
+passport_series	981
+university	938
+age	927
+academic_degree	933
+worldview	925
+address	1040
