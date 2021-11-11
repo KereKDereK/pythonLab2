@@ -7,6 +7,29 @@ from typing import List
 
 
 class Information:
+    '''
+           Объект класса Information содержит запись с информацией о пользователе.
+           Attributes
+           ----------
+             email : str
+               email пользователя
+             height : str
+               рост пользователя
+             inn : str
+               идентефикатор пользователя
+             passport_series : str
+               серия паспорта пользователя
+             university : str
+               университет пользователя
+             age : str
+               возраст пользователя
+             academic_degree : str
+               степень образования
+             worldview : str
+               мировоззрение пользователя
+             address : str
+               адрес пользователя
+        '''
     email: str
     height: str
     inn: str
@@ -32,8 +55,8 @@ class Information:
 
 class Validator:
     '''
-        Объект класса Validator представляет валидатор записей.
-        Нужен для проверки записей на корректность.
+        Объект класса Validator является валидатором записей.
+        Проверяет записи на корректность.
         Attributes
         ----------
           notes : List[Entry]
@@ -114,11 +137,11 @@ class Validator:
 
     def check_inn(self, inn: str) -> bool:
         '''
-                Проверяет корректность номера снила.
+                Проверяет корректность номера идентефикатора.
                 Parameters
                 ----------
                    inn : str
-                    Строка с проверяемым электронным адресом
+                    Строка с проверяемым идентефикатором
                 Returns
                 -------
                    bool:
@@ -201,7 +224,7 @@ class Validator:
 
     def check_university(self, university: str) -> bool:
         '''
-                Проверяет корретность рода деятельности пользователя.
+                Проверяет корретность университета пользователя.
                 Parameters
                 ----------
                   university : str
